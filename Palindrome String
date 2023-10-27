@@ -1,0 +1,27 @@
+public class Main
+{
+	public static void main(String[] args) {
+      String str = "madam";
+    	
+    	char ch[] = new char[str.length()];
+    	ch = str.toCharArray();
+    	int last=str.length()-1,flag=0;
+    	
+    	for(int i=0 ; i< (str.length())/2 ; i++){
+    	    System.out.println(ch[i]+" "+ch[last]);
+    	    if(ch[i] == ch[last] ){
+    	        flag = 0;
+    	    }else{
+    	        flag=1;
+    	        break;
+    	    }
+    	    last--;
+    	}
+    	if(flag==0){
+    	    System.out.println("palindrome");
+    	}else{
+    	    System.out.println("not palindrome");
+    	}
+    	
+	}
+}
