@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		  Scanner input = new Scanner(System.in);
+    	System.out.println("enter how much nos");
+    	int num = input.nextInt();
+    	int arrnos[] = new int[num];
+    	
+    	for(int i=0; i<num ; i++){
+    	    arrnos[i] = input.nextInt();
+    	}
+    	
+    	for(int i=0 ; i<num ; i++){
+    	    for(int j=i+1 ; j<num ; j++){
+    	        if(arrnos[i]<arrnos[j]){
+    	            int temp = arrnos[i];
+    	            arrnos[i] = arrnos[j];
+    	            arrnos[j] = temp;
+    	        }
+    	    }
+    	}
+    	
+    	for(int i=0;i<num;i++){
+    	    System.out.println(arrnos[i]);
+    	}
+	}
+}
