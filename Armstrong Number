@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+      int num = 153,cpy = 153,rem=0,n=0;
+    	
+    	while(num>0){
+    	   rem = num%10;
+    	   System.out.println("rem = "+rem);
+    	   n = (rem*rem*rem) + n;
+    	   System.out.println("n = "+n);
+    	   num = num/10;
+    	   System.out.println("div = "+num);
+    	}
+    	
+    	if(cpy == n){
+    	    System.out.println(n+" is a amstrong no");
+    	}else{
+    	    System.out.println(n+" is not a amstrong no");
+    	}
+  }
+}
